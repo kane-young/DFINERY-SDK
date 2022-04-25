@@ -22,7 +22,29 @@ final class HTTPClient: HTTPClientLogic {
     self.urlSession = urlSession
   }
 
-  private func retrieve<T>(with request: URLRequest, as type: T.Type, completionHandler: @escaping (Result<T, Error>) -> Void) -> URLSessionDataTask? where T: Decodable {
-    return nil
+  @discardableResult
+  func retrieve<T>(with request: URLRequest, as type: T.Type, completionHandler: @escaping (Result<T, NetworkError>) -> Void) -> URLSessionDataTask? where T: Decodable {
+    let task = urlSession.dataTask(with: request) { data, response, error in
+      if error != nil {
+        completionHandler(.failure(.connectionProblem))
+        return
+      }
+      if let response = response as? HTTPURLResponse,
+         (200..<300).contains(response.statusCode) == false {
+        completionHandler(.failure(.invalidResponseStatusCode(response.statusCode)))
+        return
+      }
+      guard let data = data else {
+        completionHandler(.failure(.invalidData))
+        return
+      }
+      guard let decodedType = try? JSONDecoder().decode(type, from: data) else {
+        completionHandler(.failure(.decodingError))
+        return
+      }
+      completionHandler(.success(decodedType))
+    }
+    task.resume()
+    return task
   }
 }
