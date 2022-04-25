@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C3391DDC2816745700FA9CDC /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3391DDB2816745700FA9CDC /* HttpClient.swift */; };
 		C37CE7422810E2EE0025B233 /* DFINERY_SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C37CE7392810E2EE0025B233 /* DFINERY_SDK.framework */; };
 		C37CE7472810E2EE0025B233 /* DFINERY_SDKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37CE7462810E2EE0025B233 /* DFINERY_SDKTests.swift */; };
 		C37CE7482810E2EE0025B233 /* DFINERY_SDK.h in Headers */ = {isa = PBXBuildFile; fileRef = C37CE73C2810E2EE0025B233 /* DFINERY_SDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -23,6 +24,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C3391DDB2816745700FA9CDC /* HttpClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClient.swift; sourceTree = "<group>"; };
 		C37CE7392810E2EE0025B233 /* DFINERY_SDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DFINERY_SDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C37CE73C2810E2EE0025B233 /* DFINERY_SDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DFINERY_SDK.h; sourceTree = "<group>"; };
 		C37CE7412810E2EE0025B233 /* DFINERY-SDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DFINERY-SDKTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -70,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				C37CE73C2810E2EE0025B233 /* DFINERY_SDK.h */,
+				C3391DDB2816745700FA9CDC /* HttpClient.swift */,
 			);
 			path = "DFINERY-SDK";
 			sourceTree = "<group>";
@@ -144,6 +147,7 @@
 				TargetAttributes = {
 					C37CE7382810E2EE0025B233 = {
 						CreatedOnToolsVersion = 13.0;
+						LastSwiftMigration = 1330;
 					};
 					C37CE7402810E2EE0025B233 = {
 						CreatedOnToolsVersion = 13.0;
@@ -191,6 +195,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3391DDC2816745700FA9CDC /* HttpClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,6 +343,7 @@
 		C37CE74C2810E2EE0025B233 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -358,6 +364,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -366,6 +373,7 @@
 		C37CE74D2810E2EE0025B233 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -394,6 +402,7 @@
 		C37CE74F2810E2EE0025B233 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3NNGLKCK57;
@@ -415,6 +424,7 @@
 		C37CE7502810E2EE0025B233 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3NNGLKCK57;
