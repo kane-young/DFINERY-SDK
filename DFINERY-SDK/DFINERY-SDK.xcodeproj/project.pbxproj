@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C3391DDC2816745700FA9CDC /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3391DDB2816745700FA9CDC /* HttpClient.swift */; };
+		C3391DDC2816745700FA9CDC /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3391DDB2816745700FA9CDC /* HTTPClient.swift */; };
 		C3391DDE2816757E00FA9CDC /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3391DDD2816757E00FA9CDC /* HTTPMethod.swift */; };
 		C3391DE0281675E500FA9CDC /* NetworkRequestRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3391DDF281675E500FA9CDC /* NetworkRequestRouter.swift */; };
 		C3391DE22816769400FA9CDC /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3391DE12816769400FA9CDC /* NetworkError.swift */; };
@@ -28,7 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		C3391DDB2816745700FA9CDC /* HttpClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClient.swift; sourceTree = "<group>"; };
+		C3391DDB2816745700FA9CDC /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		C3391DDD2816757E00FA9CDC /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 		C3391DDF281675E500FA9CDC /* NetworkRequestRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequestRouter.swift; sourceTree = "<group>"; };
 		C3391DE12816769400FA9CDC /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
@@ -58,6 +58,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C3391DE52816778E00FA9CDC /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				C3391DDB2816745700FA9CDC /* HTTPClient.swift */,
+				C3391DDD2816757E00FA9CDC /* HTTPMethod.swift */,
+				C3391DDF281675E500FA9CDC /* NetworkRequestRouter.swift */,
+				C3391DE12816769400FA9CDC /* NetworkError.swift */,
+				C3391DE62816779E00FA9CDC /* DTO */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		C3391DE62816779E00FA9CDC /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+				C3391DE32816772E00FA9CDC /* EventAdditionResponse.swift */,
+			);
+			path = DTO;
+			sourceTree = "<group>";
+		};
 		C37CE72F2810E2EE0025B233 = {
 			isa = PBXGroup;
 			children = (
@@ -80,11 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				C37CE73C2810E2EE0025B233 /* DFINERY_SDK.h */,
-				C3391DDB2816745700FA9CDC /* HttpClient.swift */,
-				C3391DDD2816757E00FA9CDC /* HTTPMethod.swift */,
-				C3391DDF281675E500FA9CDC /* NetworkRequestRouter.swift */,
-				C3391DE12816769400FA9CDC /* NetworkError.swift */,
-				C3391DE32816772E00FA9CDC /* EventAdditionResponse.swift */,
+				C3391DE52816778E00FA9CDC /* Network */,
 			);
 			path = "DFINERY-SDK";
 			sourceTree = "<group>";
@@ -209,7 +225,7 @@
 			files = (
 				C3391DDE2816757E00FA9CDC /* HTTPMethod.swift in Sources */,
 				C3391DE22816769400FA9CDC /* NetworkError.swift in Sources */,
-				C3391DDC2816745700FA9CDC /* HttpClient.swift in Sources */,
+				C3391DDC2816745700FA9CDC /* HTTPClient.swift in Sources */,
 				C3391DE0281675E500FA9CDC /* NetworkRequestRouter.swift in Sources */,
 				C3391DE42816772E00FA9CDC /* EventAdditionResponse.swift in Sources */,
 			);
