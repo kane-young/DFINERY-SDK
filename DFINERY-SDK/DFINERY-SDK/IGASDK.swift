@@ -15,7 +15,15 @@ final class IGASDK {
 
   private var appKey: String = ""
   private var userProperties: [String: Any]?
+  private var userAdvertisement: UserAdvertisement
+  private var location: Location?
 
+
+  // MARK: Initializers
+
+  init() {
+    self.userAdvertisement = UserAdvertisement()
+  }
 
   public func initIGASDK(appKey: String) {
     self.appKey = appKey
@@ -33,22 +41,21 @@ final class IGASDK {
   // MARK: Set IDFA
 
   public func startGettingIDFA() {
-   
+    self.userAdvertisement.enableGettingIDFA = true
   }
 
   public func stopGettingIDFA() {
-    
+    self.userAdvertisement.enableGettingIDFA = false
   }
 
   public func setAppleAdvertisingIdentifier(_ appleAdvertisingIdentifier: String) {
-    
+    self.userAdvertisement.appleAdvertisingIdentifier = appleAdvertisingIdentifier
   }
 
 
   // MARK: Set Location
 
   public func setLocation(latitude: Double, longitude: Double) {
-    
+    self.location = Location(latitude: latitude, longitude: longitude)
   }
 }
-
