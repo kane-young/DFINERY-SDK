@@ -7,8 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C3391DDC2816745700FA9CDC /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3391DDB2816745700FA9CDC /* HTTPClient.swift */; };
+		C3391DDE2816757E00FA9CDC /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3391DDD2816757E00FA9CDC /* HTTPMethod.swift */; };
+		C3391DE0281675E500FA9CDC /* NetworkRequestRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3391DDF281675E500FA9CDC /* NetworkRequestRouter.swift */; };
+		C3391DE22816769400FA9CDC /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3391DE12816769400FA9CDC /* NetworkError.swift */; };
+		C3391DE42816772E00FA9CDC /* EventAdditionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3391DE32816772E00FA9CDC /* EventAdditionResponse.swift */; };
+		C3391DE82816785900FA9CDC /* HTTPClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3391DE72816785900FA9CDC /* HTTPClientTests.swift */; };
+		C3391DEB281685D300FA9CDC /* MockURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3391DEA281685D300FA9CDC /* MockURLProtocol.swift */; };
 		C37CE7422810E2EE0025B233 /* DFINERY_SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C37CE7392810E2EE0025B233 /* DFINERY_SDK.framework */; };
-		C37CE7472810E2EE0025B233 /* DFINERY_SDKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37CE7462810E2EE0025B233 /* DFINERY_SDKTests.swift */; };
 		C37CE7482810E2EE0025B233 /* DFINERY_SDK.h in Headers */ = {isa = PBXBuildFile; fileRef = C37CE73C2810E2EE0025B233 /* DFINERY_SDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -23,10 +29,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C3391DDB2816745700FA9CDC /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		C3391DDD2816757E00FA9CDC /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		C3391DDF281675E500FA9CDC /* NetworkRequestRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequestRouter.swift; sourceTree = "<group>"; };
+		C3391DE12816769400FA9CDC /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		C3391DE32816772E00FA9CDC /* EventAdditionResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventAdditionResponse.swift; sourceTree = "<group>"; };
+		C3391DE72816785900FA9CDC /* HTTPClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClientTests.swift; sourceTree = "<group>"; };
+		C3391DEA281685D300FA9CDC /* MockURLProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLProtocol.swift; sourceTree = "<group>"; };
 		C37CE7392810E2EE0025B233 /* DFINERY_SDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DFINERY_SDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C37CE73C2810E2EE0025B233 /* DFINERY_SDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DFINERY_SDK.h; sourceTree = "<group>"; };
 		C37CE7412810E2EE0025B233 /* DFINERY-SDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DFINERY-SDKTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C37CE7462810E2EE0025B233 /* DFINERY_SDKTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DFINERY_SDKTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +60,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C3391DE52816778E00FA9CDC /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				C3391DDB2816745700FA9CDC /* HTTPClient.swift */,
+				C3391DDD2816757E00FA9CDC /* HTTPMethod.swift */,
+				C3391DDF281675E500FA9CDC /* NetworkRequestRouter.swift */,
+				C3391DE12816769400FA9CDC /* NetworkError.swift */,
+				C3391DE62816779E00FA9CDC /* DTO */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		C3391DE62816779E00FA9CDC /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+				C3391DE32816772E00FA9CDC /* EventAdditionResponse.swift */,
+			);
+			path = DTO;
+			sourceTree = "<group>";
+		};
+		C3391DE9281685C200FA9CDC /* Test Doubles */ = {
+			isa = PBXGroup;
+			children = (
+				C3391DEA281685D300FA9CDC /* MockURLProtocol.swift */,
+			);
+			path = "Test Doubles";
+			sourceTree = "<group>";
+		};
 		C37CE72F2810E2EE0025B233 = {
 			isa = PBXGroup;
 			children = (
@@ -70,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				C37CE73C2810E2EE0025B233 /* DFINERY_SDK.h */,
+				C3391DE52816778E00FA9CDC /* Network */,
 			);
 			path = "DFINERY-SDK";
 			sourceTree = "<group>";
@@ -77,7 +118,8 @@
 		C37CE7452810E2EE0025B233 /* DFINERY-SDKTests */ = {
 			isa = PBXGroup;
 			children = (
-				C37CE7462810E2EE0025B233 /* DFINERY_SDKTests.swift */,
+				C3391DE9281685C200FA9CDC /* Test Doubles */,
+				C3391DE72816785900FA9CDC /* HTTPClientTests.swift */,
 			);
 			path = "DFINERY-SDKTests";
 			sourceTree = "<group>";
@@ -144,6 +186,7 @@
 				TargetAttributes = {
 					C37CE7382810E2EE0025B233 = {
 						CreatedOnToolsVersion = 13.0;
+						LastSwiftMigration = 1330;
 					};
 					C37CE7402810E2EE0025B233 = {
 						CreatedOnToolsVersion = 13.0;
@@ -191,6 +234,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3391DDE2816757E00FA9CDC /* HTTPMethod.swift in Sources */,
+				C3391DE22816769400FA9CDC /* NetworkError.swift in Sources */,
+				C3391DDC2816745700FA9CDC /* HTTPClient.swift in Sources */,
+				C3391DE0281675E500FA9CDC /* NetworkRequestRouter.swift in Sources */,
+				C3391DE42816772E00FA9CDC /* EventAdditionResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,7 +246,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C37CE7472810E2EE0025B233 /* DFINERY_SDKTests.swift in Sources */,
+				C3391DE82816785900FA9CDC /* HTTPClientTests.swift in Sources */,
+				C3391DEB281685D300FA9CDC /* MockURLProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,6 +387,7 @@
 		C37CE74C2810E2EE0025B233 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -358,6 +408,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -366,6 +417,7 @@
 		C37CE74D2810E2EE0025B233 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -394,6 +446,7 @@
 		C37CE74F2810E2EE0025B233 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3NNGLKCK57;
@@ -415,6 +468,7 @@
 		C37CE7502810E2EE0025B233 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3NNGLKCK57;
