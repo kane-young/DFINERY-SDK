@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C3391DDC2816745700FA9CDC /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3391DDB2816745700FA9CDC /* HttpClient.swift */; };
+		C3391DDE2816757E00FA9CDC /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3391DDD2816757E00FA9CDC /* HTTPMethod.swift */; };
 		C37CE7422810E2EE0025B233 /* DFINERY_SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C37CE7392810E2EE0025B233 /* DFINERY_SDK.framework */; };
 		C37CE7472810E2EE0025B233 /* DFINERY_SDKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37CE7462810E2EE0025B233 /* DFINERY_SDKTests.swift */; };
 		C37CE7482810E2EE0025B233 /* DFINERY_SDK.h in Headers */ = {isa = PBXBuildFile; fileRef = C37CE73C2810E2EE0025B233 /* DFINERY_SDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -25,6 +26,7 @@
 
 /* Begin PBXFileReference section */
 		C3391DDB2816745700FA9CDC /* HttpClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClient.swift; sourceTree = "<group>"; };
+		C3391DDD2816757E00FA9CDC /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 		C37CE7392810E2EE0025B233 /* DFINERY_SDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DFINERY_SDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C37CE73C2810E2EE0025B233 /* DFINERY_SDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DFINERY_SDK.h; sourceTree = "<group>"; };
 		C37CE7412810E2EE0025B233 /* DFINERY-SDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DFINERY-SDKTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -73,6 +75,7 @@
 			children = (
 				C37CE73C2810E2EE0025B233 /* DFINERY_SDK.h */,
 				C3391DDB2816745700FA9CDC /* HttpClient.swift */,
+				C3391DDD2816757E00FA9CDC /* HTTPMethod.swift */,
 			);
 			path = "DFINERY-SDK";
 			sourceTree = "<group>";
@@ -195,6 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3391DDE2816757E00FA9CDC /* HTTPMethod.swift in Sources */,
 				C3391DDC2816745700FA9CDC /* HttpClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
