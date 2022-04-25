@@ -15,6 +15,7 @@
 		C3391DE82816785900FA9CDC /* HTTPClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3391DE72816785900FA9CDC /* HTTPClientTests.swift */; };
 		C3391DEB281685D300FA9CDC /* MockURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3391DEA281685D300FA9CDC /* MockURLProtocol.swift */; };
 		C3391DED281695D300FA9CDC /* IGASDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3391DEC281695D300FA9CDC /* IGASDK.swift */; };
+		C3391DEF2816965D00FA9CDC /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3391DEE2816965D00FA9CDC /* Location.swift */; };
 		C37CE7422810E2EE0025B233 /* DFINERY_SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C37CE7392810E2EE0025B233 /* DFINERY_SDK.framework */; };
 		C37CE7482810E2EE0025B233 /* DFINERY_SDK.h in Headers */ = {isa = PBXBuildFile; fileRef = C37CE73C2810E2EE0025B233 /* DFINERY_SDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
@@ -38,6 +39,7 @@
 		C3391DE72816785900FA9CDC /* HTTPClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClientTests.swift; sourceTree = "<group>"; };
 		C3391DEA281685D300FA9CDC /* MockURLProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLProtocol.swift; sourceTree = "<group>"; };
 		C3391DEC281695D300FA9CDC /* IGASDK.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGASDK.swift; sourceTree = "<group>"; };
+		C3391DEE2816965D00FA9CDC /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		C37CE7392810E2EE0025B233 /* DFINERY_SDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DFINERY_SDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C37CE73C2810E2EE0025B233 /* DFINERY_SDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DFINERY_SDK.h; sourceTree = "<group>"; };
 		C37CE7412810E2EE0025B233 /* DFINERY-SDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DFINERY-SDKTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -113,6 +115,7 @@
 			children = (
 				C37CE73C2810E2EE0025B233 /* DFINERY_SDK.h */,
 				C3391DEC281695D300FA9CDC /* IGASDK.swift */,
+				C3391DEE2816965D00FA9CDC /* Location.swift */,
 				C3391DE52816778E00FA9CDC /* Network */,
 			);
 			path = "DFINERY-SDK";
@@ -243,6 +246,7 @@
 				C3391DDC2816745700FA9CDC /* HTTPClient.swift in Sources */,
 				C3391DE0281675E500FA9CDC /* NetworkRequestRouter.swift in Sources */,
 				C3391DE42816772E00FA9CDC /* EventAdditionResponse.swift in Sources */,
+				C3391DEF2816965D00FA9CDC /* Location.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
