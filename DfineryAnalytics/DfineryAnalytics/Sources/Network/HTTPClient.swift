@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol HTTPClientLogic {
+public protocol HTTPClientLogic {
   func createEvent(appKey: String, eventName: String, eventProperties: [String: Any]?, userProperties: [String: Any]?, userAdvertisement: UserAdvertisement, location: Location?, completionHandler: @escaping (Result<EventAdditionResponse, NetworkError>) -> Void) -> URLSessionDataTask?
 }
 
@@ -21,7 +21,7 @@ public final class HTTPClient: HTTPClientLogic {
 
   // MARK: Initializers
 
-  init(urlSession: URLSession = .shared, requestBuilder: RequestBuilderLogic = RequestBuilder()) {
+  public init(urlSession: URLSession = .shared, requestBuilder: RequestBuilderLogic = RequestBuilder()) {
     self.urlSession = urlSession
     self.requestBuilder = requestBuilder
   }

@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import DFINERY_SDK
+import DfineryAnalytics
 
 final class FakeScreen: UIScreenLogic {
   var nativeBounds: CGRect

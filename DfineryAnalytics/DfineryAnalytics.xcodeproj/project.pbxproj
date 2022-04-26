@@ -92,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				C3391DDB2816745700FA9CDC /* HTTPClient.swift */,
+				C3391E1228177E0600FA9CDC /* RequestBuilder.swift */,
 				C3391DDD2816757E00FA9CDC /* HTTPMethod.swift */,
 				C3391DDF281675E500FA9CDC /* NetworkRequestRouter.swift */,
 				C3391DE12816769400FA9CDC /* NetworkError.swift */,
@@ -161,13 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				C37CE73C2810E2EE0025B233 /* DFINERY_SDK.h */,
-				C3391DEC281695D300FA9CDC /* IGASDK.swift */,
-				C3391DEE2816965D00FA9CDC /* Location.swift */,
-				C3391DF0281696B200FA9CDC /* UserAdvertisement.swift */,
-				C3391E1228177E0600FA9CDC /* RequestBuilder.swift */,
-				C3391E272817A9A500FA9CDC /* Log */,
-				C3391DE52816778E00FA9CDC /* Network */,
-				C3391E1428177F2C00FA9CDC /* Extension */,
+				C3AEF9C82817D65A002A6B4A /* Sources */,
 			);
 			path = DfineryAnalytics;
 			sourceTree = "<group>";
@@ -180,6 +175,19 @@
 				C3391E212817800600FA9CDC /* RequestBuilderTests.swift */,
 			);
 			path = "DFINERY-SDKTests";
+			sourceTree = "<group>";
+		};
+		C3AEF9C82817D65A002A6B4A /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				C3391DEC281695D300FA9CDC /* IGASDK.swift */,
+				C3391DEE2816965D00FA9CDC /* Location.swift */,
+				C3391DF0281696B200FA9CDC /* UserAdvertisement.swift */,
+				C3391E272817A9A500FA9CDC /* Log */,
+				C3391DE52816778E00FA9CDC /* Network */,
+				C3391E1428177F2C00FA9CDC /* Extension */,
+			);
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

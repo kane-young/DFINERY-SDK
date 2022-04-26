@@ -7,11 +7,11 @@
 
 import Foundation
 
-protocol EventLoggerLogic {
+public protocol EventLoggerLogic {
   func logEvent(appKey: String, eventName: String, eventProperties: [String: Any]?, userProperties: [String: Any]?, userAdvertisement: UserAdvertisement, location: Location?)
 }
 
-final class EventLogger: EventLoggerLogic {
+public final class EventLogger: EventLoggerLogic {
 
   // MARK: Properties
 
@@ -20,7 +20,7 @@ final class EventLogger: EventLoggerLogic {
 
   // MARK: Initializers
 
-  init(httpClient: HTTPClientLogic = HTTPClient()) {
+  public init(httpClient: HTTPClientLogic = HTTPClient()) {
     self.httpClient = httpClient
   }
 
