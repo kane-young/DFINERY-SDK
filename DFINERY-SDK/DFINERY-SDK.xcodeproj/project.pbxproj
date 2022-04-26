@@ -25,6 +25,8 @@
 		C3391E1E28177FDC00FA9CDC /* FakeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3391E1D28177FDC00FA9CDC /* FakeScreen.swift */; };
 		C3391E2028177FEF00FA9CDC /* FakeCarrier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3391E1F28177FEF00FA9CDC /* FakeCarrier.swift */; };
 		C3391E222817800600FA9CDC /* RequestBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3391E212817800600FA9CDC /* RequestBuilderTests.swift */; };
+		C3391E262817A97700FA9CDC /* OSLog+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3391E252817A97700FA9CDC /* OSLog+Extension.swift */; };
+		C3391E292817A9A900FA9CDC /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3391E282817A9A900FA9CDC /* Log.swift */; };
 		C37CE7422810E2EE0025B233 /* DFINERY_SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C37CE7392810E2EE0025B233 /* DFINERY_SDK.framework */; };
 		C37CE7482810E2EE0025B233 /* DFINERY_SDK.h in Headers */ = {isa = PBXBuildFile; fileRef = C37CE73C2810E2EE0025B233 /* DFINERY_SDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
@@ -58,6 +60,8 @@
 		C3391E1D28177FDC00FA9CDC /* FakeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeScreen.swift; sourceTree = "<group>"; };
 		C3391E1F28177FEF00FA9CDC /* FakeCarrier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeCarrier.swift; sourceTree = "<group>"; };
 		C3391E212817800600FA9CDC /* RequestBuilderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestBuilderTests.swift; sourceTree = "<group>"; };
+		C3391E252817A97700FA9CDC /* OSLog+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OSLog+Extension.swift"; sourceTree = "<group>"; };
+		C3391E282817A9A900FA9CDC /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
 		C37CE7392810E2EE0025B233 /* DFINERY_SDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DFINERY_SDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C37CE73C2810E2EE0025B233 /* DFINERY_SDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DFINERY_SDK.h; sourceTree = "<group>"; };
 		C37CE7412810E2EE0025B233 /* DFINERY-SDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DFINERY-SDKTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -117,10 +121,19 @@
 			isa = PBXGroup;
 			children = (
 				C3391E1528177F4100FA9CDC /* UIDevice+Extension.swift */,
+				C3391E252817A97700FA9CDC /* OSLog+Extension.swift */,
 				C3391E1728177F5600FA9CDC /* UIScreen+Extension.swift */,
 				C3391E1928177F6D00FA9CDC /* CTCarrier+Extension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		C3391E272817A9A500FA9CDC /* Log */ = {
+			isa = PBXGroup;
+			children = (
+				C3391E282817A9A900FA9CDC /* Log.swift */,
+			);
+			path = Log;
 			sourceTree = "<group>";
 		};
 		C37CE72F2810E2EE0025B233 = {
@@ -149,6 +162,7 @@
 				C3391DEE2816965D00FA9CDC /* Location.swift */,
 				C3391DF0281696B200FA9CDC /* UserAdvertisement.swift */,
 				C3391E1228177E0600FA9CDC /* RequestBuilder.swift */,
+				C3391E272817A9A500FA9CDC /* Log */,
 				C3391DE52816778E00FA9CDC /* Network */,
 				C3391E1428177F2C00FA9CDC /* Extension */,
 			);
@@ -277,11 +291,13 @@
 			files = (
 				C3391DED281695D300FA9CDC /* IGASDK.swift in Sources */,
 				C3391DDE2816757E00FA9CDC /* HTTPMethod.swift in Sources */,
+				C3391E262817A97700FA9CDC /* OSLog+Extension.swift in Sources */,
 				C3391DE22816769400FA9CDC /* NetworkError.swift in Sources */,
 				C3391E1828177F5600FA9CDC /* UIScreen+Extension.swift in Sources */,
 				C3391E1628177F4100FA9CDC /* UIDevice+Extension.swift in Sources */,
 				C3391E1328177E0600FA9CDC /* RequestBuilder.swift in Sources */,
 				C3391DDC2816745700FA9CDC /* HTTPClient.swift in Sources */,
+				C3391E292817A9A900FA9CDC /* Log.swift in Sources */,
 				C3391DF1281696B200FA9CDC /* UserAdvertisement.swift in Sources */,
 				C3391DE0281675E500FA9CDC /* NetworkRequestRouter.swift in Sources */,
 				C3391DE42816772E00FA9CDC /* EventAdditionResponse.swift in Sources */,
