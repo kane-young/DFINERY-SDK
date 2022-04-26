@@ -13,6 +13,7 @@ final class IGASDK {
 
   public static let getInstance = IGASDK()
 
+  private let eventLogger: EventLoggerLogic
   private var appKey: String = ""
   private var userProperties: [String: Any]?
   private var userAdvertisement: UserAdvertisement
@@ -21,7 +22,8 @@ final class IGASDK {
 
   // MARK: Initializers
 
-  init() {
+  public init(eventLogger: EventLoggerLogic = EventLogger()) {
+    self.eventLogger = eventLogger
     self.userAdvertisement = UserAdvertisement()
   }
 
@@ -34,7 +36,14 @@ final class IGASDK {
   }
 
   public func addEvent(appKey: String, eventName: String, eventProperties: [String: Any]? = nil) {
-    
+    self.eventLogger.logEvent(
+      appKey: appKey,
+      eventName: eventName,
+      eventProperties: eventProperties,
+      userProperties: self.userProperties,
+      userAdvertisement: self.userAdvertisement,
+      location: self.location
+    )
   }
 
 
