@@ -42,7 +42,7 @@ struct Log {
       case .error:
         return OSLog.error
       case .custom:
-        return OSLog.debug
+        return OSLog.info
       }
     }
 
