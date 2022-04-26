@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct UserAdvertisement {
+public struct UserAdvertisement {
   static let defaultIdentifier = "00000000-0000-0000-0000-000000000000"
 
   var enableGettingIDFA = false
