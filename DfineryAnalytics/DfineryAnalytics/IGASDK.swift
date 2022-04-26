@@ -7,7 +7,7 @@
 
 import Foundation
 
-final class IGASDK {
+public final class IGASDK {
 
   // MARK: Properties
 

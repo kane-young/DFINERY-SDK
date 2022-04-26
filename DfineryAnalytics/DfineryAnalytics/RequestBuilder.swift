@@ -9,7 +9,7 @@ import CoreTelephony
 import Network
 import UIKit
 
-protocol RequestBuilderLogic {
+public protocol RequestBuilderLogic {
   func httpRequestBody(with appKey: String, eventName: String, eventProperties: [String: Any]?, userProperties: [String: Any]?, userAdvertisement: UserAdvertisement, location: Location?) -> Data?
 }
 
