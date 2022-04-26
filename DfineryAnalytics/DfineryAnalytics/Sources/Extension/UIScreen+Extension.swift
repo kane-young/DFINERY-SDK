@@ -7,7 +7,7 @@
 
 import UIKit
 
-public protocol UIScreenLogic {
+protocol UIScreenLogic {
   var nativeBounds: CGRect { get }
 }
 

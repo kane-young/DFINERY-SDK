@@ -22,7 +22,7 @@ public final class IGASDK {
 
   // MARK: Initializers
 
-  public init(eventLogger: EventLoggerLogic = EventLogger()) {
+  init(eventLogger: EventLoggerLogic = EventLogger()) {
     self.eventLogger = eventLogger
     self.userAdvertisement = UserAdvertisement()
   }

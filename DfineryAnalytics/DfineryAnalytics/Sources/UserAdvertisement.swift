@@ -7,9 +7,14 @@
 
 import Foundation
 
-public struct UserAdvertisement {
+struct UserAdvertisement {
   static let defaultIdentifier = "00000000-0000-0000-0000-000000000000"
 
-  var enableGettingIDFA = false
-  var appleAdvertisingIdentifier = UserAdvertisement.defaultIdentifier
+  var enableGettingIDFA: Bool
+  var appleAdvertisingIdentifier: String
+
+  init(enableGettingIDFA: Bool = false, appleAdvertisingIdentifier: String = UserAdvertisement.defaultIdentifier) {
+    self.enableGettingIDFA = enableGettingIDFA
+    self.appleAdvertisingIdentifier = appleAdvertisingIdentifier
+  }
 }

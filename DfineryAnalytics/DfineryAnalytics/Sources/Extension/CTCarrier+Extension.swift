@@ -7,7 +7,7 @@
 
 import CoreTelephony
 
-public protocol CTCarrierLogic {
+protocol CTCarrierLogic {
   var carrierName: String? { get }
 }
 
