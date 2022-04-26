@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import DFINERY_SDK
+import DfineryAnalytics
 
 final class FakeCarrier: CTCarrierLogic {
   var carrierName: String?

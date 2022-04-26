@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import DFINERY_SDK
+import DfineryAnalytics
 
 final class FakeDevice: UIDeviceLogic {
   var systemVersion: String = "4.4.4"
