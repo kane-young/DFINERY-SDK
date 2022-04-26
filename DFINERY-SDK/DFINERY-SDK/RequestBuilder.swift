@@ -18,18 +18,18 @@ public final class RequestBuilder: RequestBuilderLogic {
   // MARK: Properties
 
   private let monitor: NWPathMonitor
-  private let device: UIDevice
-  private let screen: UIScreen
-  private let carriers: [String: CTCarrier]?
+  private let device: UIDeviceLogic
+  private let screen: UIScreenLogic
+  private let carriers: [String: CTCarrierLogic]?
   private let languages: [String]
 
 
   // MARK: Initializers
 
   public init(monitor: NWPathMonitor = NWPathMonitor(),
-       device: UIDevice = UIDevice.current,
-       screen: UIScreen = UIScreen.main,
-       carriers: [String: CTCarrier]? = CTTelephonyNetworkInfo().serviceSubscriberCellularProviders,
+       device: UIDeviceLogic = UIDevice.current,
+       screen: UIScreenLogic = UIScreen.main,
+       carriers: [String: CTCarrierLogic]? = CTTelephonyNetworkInfo().serviceSubscriberCellularProviders,
        languages: [String] = NSLocale.preferredLanguages) {
     self.monitor = monitor
     self.device = device
@@ -46,7 +46,7 @@ public final class RequestBuilder: RequestBuilderLogic {
 
   // MARK: HTTP Request Body (Data?)
 
-  func httpRequestBody(with appKey: String, eventName: String, eventProperties: [String: Any]?, userProperties: [String: Any]?, userAdvertisement: UserAdvertisement, location: Location?) -> Data? {
+  public func httpRequestBody(with appKey: String, eventName: String, eventProperties: [String: Any]?, userProperties: [String: Any]?, userAdvertisement: UserAdvertisement, location: Location?) -> Data? {
     let keyValues: [String: Any] = self.keyValues(
       with: appKey,
       eventName: eventName,

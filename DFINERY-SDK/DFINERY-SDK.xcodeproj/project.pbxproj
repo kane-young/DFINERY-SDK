@@ -21,6 +21,10 @@
 		C3391E1628177F4100FA9CDC /* UIDevice+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3391E1528177F4100FA9CDC /* UIDevice+Extension.swift */; };
 		C3391E1828177F5600FA9CDC /* UIScreen+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3391E1728177F5600FA9CDC /* UIScreen+Extension.swift */; };
 		C3391E1A28177F6D00FA9CDC /* CTCarrier+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3391E1928177F6D00FA9CDC /* CTCarrier+Extension.swift */; };
+		C3391E1C28177FCF00FA9CDC /* FakeDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3391E1B28177FCF00FA9CDC /* FakeDevice.swift */; };
+		C3391E1E28177FDC00FA9CDC /* FakeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3391E1D28177FDC00FA9CDC /* FakeScreen.swift */; };
+		C3391E2028177FEF00FA9CDC /* FakeCarrier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3391E1F28177FEF00FA9CDC /* FakeCarrier.swift */; };
+		C3391E222817800600FA9CDC /* RequestBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3391E212817800600FA9CDC /* RequestBuilderTests.swift */; };
 		C37CE7422810E2EE0025B233 /* DFINERY_SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C37CE7392810E2EE0025B233 /* DFINERY_SDK.framework */; };
 		C37CE7482810E2EE0025B233 /* DFINERY_SDK.h in Headers */ = {isa = PBXBuildFile; fileRef = C37CE73C2810E2EE0025B233 /* DFINERY_SDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
@@ -50,6 +54,10 @@
 		C3391E1528177F4100FA9CDC /* UIDevice+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDevice+Extension.swift"; sourceTree = "<group>"; };
 		C3391E1728177F5600FA9CDC /* UIScreen+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScreen+Extension.swift"; sourceTree = "<group>"; };
 		C3391E1928177F6D00FA9CDC /* CTCarrier+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CTCarrier+Extension.swift"; sourceTree = "<group>"; };
+		C3391E1B28177FCF00FA9CDC /* FakeDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeDevice.swift; sourceTree = "<group>"; };
+		C3391E1D28177FDC00FA9CDC /* FakeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeScreen.swift; sourceTree = "<group>"; };
+		C3391E1F28177FEF00FA9CDC /* FakeCarrier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeCarrier.swift; sourceTree = "<group>"; };
+		C3391E212817800600FA9CDC /* RequestBuilderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestBuilderTests.swift; sourceTree = "<group>"; };
 		C37CE7392810E2EE0025B233 /* DFINERY_SDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DFINERY_SDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C37CE73C2810E2EE0025B233 /* DFINERY_SDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DFINERY_SDK.h; sourceTree = "<group>"; };
 		C37CE7412810E2EE0025B233 /* DFINERY-SDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DFINERY-SDKTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -98,6 +106,9 @@
 			isa = PBXGroup;
 			children = (
 				C3391DEA281685D300FA9CDC /* MockURLProtocol.swift */,
+				C3391E1B28177FCF00FA9CDC /* FakeDevice.swift */,
+				C3391E1D28177FDC00FA9CDC /* FakeScreen.swift */,
+				C3391E1F28177FEF00FA9CDC /* FakeCarrier.swift */,
 			);
 			path = "Test Doubles";
 			sourceTree = "<group>";
@@ -149,6 +160,7 @@
 			children = (
 				C3391DE9281685C200FA9CDC /* Test Doubles */,
 				C3391DE72816785900FA9CDC /* HTTPClientTests.swift */,
+				C3391E212817800600FA9CDC /* RequestBuilderTests.swift */,
 			);
 			path = "DFINERY-SDKTests";
 			sourceTree = "<group>";
@@ -284,6 +296,10 @@
 			files = (
 				C3391DE82816785900FA9CDC /* HTTPClientTests.swift in Sources */,
 				C3391DEB281685D300FA9CDC /* MockURLProtocol.swift in Sources */,
+				C3391E1E28177FDC00FA9CDC /* FakeScreen.swift in Sources */,
+				C3391E222817800600FA9CDC /* RequestBuilderTests.swift in Sources */,
+				C3391E2028177FEF00FA9CDC /* FakeCarrier.swift in Sources */,
+				C3391E1C28177FCF00FA9CDC /* FakeDevice.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
