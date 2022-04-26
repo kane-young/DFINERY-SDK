@@ -17,6 +17,14 @@
 		C3391DED281695D300FA9CDC /* IGASDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3391DEC281695D300FA9CDC /* IGASDK.swift */; };
 		C3391DEF2816965D00FA9CDC /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3391DEE2816965D00FA9CDC /* Location.swift */; };
 		C3391DF1281696B200FA9CDC /* UserAdvertisement.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3391DF0281696B200FA9CDC /* UserAdvertisement.swift */; };
+		C3391E1328177E0600FA9CDC /* RequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3391E1228177E0600FA9CDC /* RequestBuilder.swift */; };
+		C3391E1628177F4100FA9CDC /* UIDevice+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3391E1528177F4100FA9CDC /* UIDevice+Extension.swift */; };
+		C3391E1828177F5600FA9CDC /* UIScreen+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3391E1728177F5600FA9CDC /* UIScreen+Extension.swift */; };
+		C3391E1A28177F6D00FA9CDC /* CTCarrier+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3391E1928177F6D00FA9CDC /* CTCarrier+Extension.swift */; };
+		C3391E1C28177FCF00FA9CDC /* FakeDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3391E1B28177FCF00FA9CDC /* FakeDevice.swift */; };
+		C3391E1E28177FDC00FA9CDC /* FakeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3391E1D28177FDC00FA9CDC /* FakeScreen.swift */; };
+		C3391E2028177FEF00FA9CDC /* FakeCarrier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3391E1F28177FEF00FA9CDC /* FakeCarrier.swift */; };
+		C3391E222817800600FA9CDC /* RequestBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3391E212817800600FA9CDC /* RequestBuilderTests.swift */; };
 		C37CE7422810E2EE0025B233 /* DFINERY_SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C37CE7392810E2EE0025B233 /* DFINERY_SDK.framework */; };
 		C37CE7482810E2EE0025B233 /* DFINERY_SDK.h in Headers */ = {isa = PBXBuildFile; fileRef = C37CE73C2810E2EE0025B233 /* DFINERY_SDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
@@ -42,6 +50,14 @@
 		C3391DEC281695D300FA9CDC /* IGASDK.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGASDK.swift; sourceTree = "<group>"; };
 		C3391DEE2816965D00FA9CDC /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		C3391DF0281696B200FA9CDC /* UserAdvertisement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAdvertisement.swift; sourceTree = "<group>"; };
+		C3391E1228177E0600FA9CDC /* RequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestBuilder.swift; sourceTree = "<group>"; };
+		C3391E1528177F4100FA9CDC /* UIDevice+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDevice+Extension.swift"; sourceTree = "<group>"; };
+		C3391E1728177F5600FA9CDC /* UIScreen+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScreen+Extension.swift"; sourceTree = "<group>"; };
+		C3391E1928177F6D00FA9CDC /* CTCarrier+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CTCarrier+Extension.swift"; sourceTree = "<group>"; };
+		C3391E1B28177FCF00FA9CDC /* FakeDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeDevice.swift; sourceTree = "<group>"; };
+		C3391E1D28177FDC00FA9CDC /* FakeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeScreen.swift; sourceTree = "<group>"; };
+		C3391E1F28177FEF00FA9CDC /* FakeCarrier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeCarrier.swift; sourceTree = "<group>"; };
+		C3391E212817800600FA9CDC /* RequestBuilderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestBuilderTests.swift; sourceTree = "<group>"; };
 		C37CE7392810E2EE0025B233 /* DFINERY_SDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DFINERY_SDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C37CE73C2810E2EE0025B233 /* DFINERY_SDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DFINERY_SDK.h; sourceTree = "<group>"; };
 		C37CE7412810E2EE0025B233 /* DFINERY-SDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DFINERY-SDKTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -90,8 +106,21 @@
 			isa = PBXGroup;
 			children = (
 				C3391DEA281685D300FA9CDC /* MockURLProtocol.swift */,
+				C3391E1B28177FCF00FA9CDC /* FakeDevice.swift */,
+				C3391E1D28177FDC00FA9CDC /* FakeScreen.swift */,
+				C3391E1F28177FEF00FA9CDC /* FakeCarrier.swift */,
 			);
 			path = "Test Doubles";
+			sourceTree = "<group>";
+		};
+		C3391E1428177F2C00FA9CDC /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				C3391E1528177F4100FA9CDC /* UIDevice+Extension.swift */,
+				C3391E1728177F5600FA9CDC /* UIScreen+Extension.swift */,
+				C3391E1928177F6D00FA9CDC /* CTCarrier+Extension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		C37CE72F2810E2EE0025B233 = {
@@ -119,7 +148,9 @@
 				C3391DEC281695D300FA9CDC /* IGASDK.swift */,
 				C3391DEE2816965D00FA9CDC /* Location.swift */,
 				C3391DF0281696B200FA9CDC /* UserAdvertisement.swift */,
+				C3391E1228177E0600FA9CDC /* RequestBuilder.swift */,
 				C3391DE52816778E00FA9CDC /* Network */,
+				C3391E1428177F2C00FA9CDC /* Extension */,
 			);
 			path = "DFINERY-SDK";
 			sourceTree = "<group>";
@@ -129,6 +160,7 @@
 			children = (
 				C3391DE9281685C200FA9CDC /* Test Doubles */,
 				C3391DE72816785900FA9CDC /* HTTPClientTests.swift */,
+				C3391E212817800600FA9CDC /* RequestBuilderTests.swift */,
 			);
 			path = "DFINERY-SDKTests";
 			sourceTree = "<group>";
@@ -246,11 +278,15 @@
 				C3391DED281695D300FA9CDC /* IGASDK.swift in Sources */,
 				C3391DDE2816757E00FA9CDC /* HTTPMethod.swift in Sources */,
 				C3391DE22816769400FA9CDC /* NetworkError.swift in Sources */,
+				C3391E1828177F5600FA9CDC /* UIScreen+Extension.swift in Sources */,
+				C3391E1628177F4100FA9CDC /* UIDevice+Extension.swift in Sources */,
+				C3391E1328177E0600FA9CDC /* RequestBuilder.swift in Sources */,
 				C3391DDC2816745700FA9CDC /* HTTPClient.swift in Sources */,
 				C3391DF1281696B200FA9CDC /* UserAdvertisement.swift in Sources */,
 				C3391DE0281675E500FA9CDC /* NetworkRequestRouter.swift in Sources */,
 				C3391DE42816772E00FA9CDC /* EventAdditionResponse.swift in Sources */,
 				C3391DEF2816965D00FA9CDC /* Location.swift in Sources */,
+				C3391E1A28177F6D00FA9CDC /* CTCarrier+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +296,10 @@
 			files = (
 				C3391DE82816785900FA9CDC /* HTTPClientTests.swift in Sources */,
 				C3391DEB281685D300FA9CDC /* MockURLProtocol.swift in Sources */,
+				C3391E1E28177FDC00FA9CDC /* FakeScreen.swift in Sources */,
+				C3391E222817800600FA9CDC /* RequestBuilderTests.swift in Sources */,
+				C3391E2028177FEF00FA9CDC /* FakeCarrier.swift in Sources */,
+				C3391E1C28177FCF00FA9CDC /* FakeDevice.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

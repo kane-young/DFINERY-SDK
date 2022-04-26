@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Location {
+public struct Location {
   var latitude: Double
   var longitude: Double
 }
