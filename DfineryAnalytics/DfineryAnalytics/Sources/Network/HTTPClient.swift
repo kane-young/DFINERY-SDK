@@ -7,11 +7,11 @@
 
 import Foundation
 
-public protocol HTTPClientLogic {
+protocol HTTPClientLogic {
   func createEvent(appKey: String, eventName: String, eventProperties: [String: Any]?, userProperties: [String: Any]?, userAdvertisement: UserAdvertisement, location: Location?, completionHandler: @escaping (Result<EventAdditionResponse, NetworkError>) -> Void) -> URLSessionDataTask?
 }
 
-public final class HTTPClient: HTTPClientLogic {
+final class HTTPClient: HTTPClientLogic {
 
   // MARK: Properties
 
@@ -21,13 +21,13 @@ public final class HTTPClient: HTTPClientLogic {
 
   // MARK: Initializers
 
-  public init(urlSession: URLSession = .shared, requestBuilder: RequestBuilderLogic = RequestBuilder()) {
+  init(urlSession: URLSession = .shared, requestBuilder: RequestBuilderLogic = RequestBuilder()) {
     self.urlSession = urlSession
     self.requestBuilder = requestBuilder
   }
 
   @discardableResult
-  public func createEvent(appKey: String, eventName: String, eventProperties: [String: Any]?, userProperties: [String: Any]?, userAdvertisement: UserAdvertisement, location: Location?, completionHandler: @escaping (Result<EventAdditionResponse, NetworkError>) -> Void) -> URLSessionDataTask? {
+  func createEvent(appKey: String, eventName: String, eventProperties: [String: Any]?, userProperties: [String: Any]?, userAdvertisement: UserAdvertisement, location: Location?, completionHandler: @escaping (Result<EventAdditionResponse, NetworkError>) -> Void) -> URLSessionDataTask? {
     let httpBody = self.requestBuilder.httpRequestBody(
       with: appKey,
       eventName: eventName,

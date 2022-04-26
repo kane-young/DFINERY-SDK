@@ -7,7 +7,7 @@
 
 import UIKit
 
-public protocol UIDeviceLogic {
+protocol UIDeviceLogic {
   var systemVersion: String { get }
   var name: String { get }
   var orientation: UIDeviceOrientation { get }

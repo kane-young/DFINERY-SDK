@@ -9,11 +9,11 @@ import CoreTelephony
 import Network
 import UIKit
 
-public protocol RequestBuilderLogic {
+protocol RequestBuilderLogic {
   func httpRequestBody(with appKey: String, eventName: String, eventProperties: [String: Any]?, userProperties: [String: Any]?, userAdvertisement: UserAdvertisement, location: Location?) -> Data?
 }
 
-public final class RequestBuilder: RequestBuilderLogic {
+final class RequestBuilder: RequestBuilderLogic {
 
   // MARK: Properties
 
@@ -26,7 +26,7 @@ public final class RequestBuilder: RequestBuilderLogic {
 
   // MARK: Initializers
 
-  public init(monitor: NWPathMonitor = NWPathMonitor(),
+  init(monitor: NWPathMonitor = NWPathMonitor(),
        device: UIDeviceLogic = UIDevice.current,
        screen: UIScreenLogic = UIScreen.main,
        carriers: [String: CTCarrierLogic]? = CTTelephonyNetworkInfo().serviceSubscriberCellularProviders,
@@ -46,7 +46,7 @@ public final class RequestBuilder: RequestBuilderLogic {
 
   // MARK: HTTP Request Body (Data?)
 
-  public func httpRequestBody(with appKey: String, eventName: String, eventProperties: [String: Any]?, userProperties: [String: Any]?, userAdvertisement: UserAdvertisement, location: Location?) -> Data? {
+  func httpRequestBody(with appKey: String, eventName: String, eventProperties: [String: Any]?, userProperties: [String: Any]?, userAdvertisement: UserAdvertisement, location: Location?) -> Data? {
     let keyValues: [String: Any] = self.keyValues(
       with: appKey,
       eventName: eventName,
