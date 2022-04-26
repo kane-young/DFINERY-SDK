@@ -28,7 +28,7 @@
 		C3391E262817A97700FA9CDC /* OSLog+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3391E252817A97700FA9CDC /* OSLog+Extension.swift */; };
 		C3391E292817A9A900FA9CDC /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3391E282817A9A900FA9CDC /* Log.swift */; };
 		C3391E2B2817AA4300FA9CDC /* EventLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3391E2A2817AA4300FA9CDC /* EventLogger.swift */; };
-		C37CE7422810E2EE0025B233 /* DFINERY_SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C37CE7392810E2EE0025B233 /* DFINERY_SDK.framework */; };
+		C37CE7422810E2EE0025B233 /* DfineryAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C37CE7392810E2EE0025B233 /* DfineryAnalytics.framework */; };
 		C37CE7482810E2EE0025B233 /* DFINERY_SDK.h in Headers */ = {isa = PBXBuildFile; fileRef = C37CE73C2810E2EE0025B233 /* DFINERY_SDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -64,9 +64,9 @@
 		C3391E252817A97700FA9CDC /* OSLog+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OSLog+Extension.swift"; sourceTree = "<group>"; };
 		C3391E282817A9A900FA9CDC /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
 		C3391E2A2817AA4300FA9CDC /* EventLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventLogger.swift; sourceTree = "<group>"; };
-		C37CE7392810E2EE0025B233 /* DFINERY_SDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DFINERY_SDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C37CE7392810E2EE0025B233 /* DfineryAnalytics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DfineryAnalytics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C37CE73C2810E2EE0025B233 /* DFINERY_SDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DFINERY_SDK.h; sourceTree = "<group>"; };
-		C37CE7412810E2EE0025B233 /* DFINERY-SDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DFINERY-SDKTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C37CE7412810E2EE0025B233 /* DfineryAnalyticsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DfineryAnalyticsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C37CE7422810E2EE0025B233 /* DFINERY_SDK.framework in Frameworks */,
+				C37CE7422810E2EE0025B233 /* DfineryAnalytics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,7 +142,7 @@
 		C37CE72F2810E2EE0025B233 = {
 			isa = PBXGroup;
 			children = (
-				C37CE73B2810E2EE0025B233 /* DFINERY-SDK */,
+				C37CE73B2810E2EE0025B233 /* DfineryAnalytics */,
 				C37CE7452810E2EE0025B233 /* DFINERY-SDKTests */,
 				C37CE73A2810E2EE0025B233 /* Products */,
 			);
@@ -151,13 +151,13 @@
 		C37CE73A2810E2EE0025B233 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C37CE7392810E2EE0025B233 /* DFINERY_SDK.framework */,
-				C37CE7412810E2EE0025B233 /* DFINERY-SDKTests.xctest */,
+				C37CE7392810E2EE0025B233 /* DfineryAnalytics.framework */,
+				C37CE7412810E2EE0025B233 /* DfineryAnalyticsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C37CE73B2810E2EE0025B233 /* DFINERY-SDK */ = {
+		C37CE73B2810E2EE0025B233 /* DfineryAnalytics */ = {
 			isa = PBXGroup;
 			children = (
 				C37CE73C2810E2EE0025B233 /* DFINERY_SDK.h */,
@@ -169,7 +169,7 @@
 				C3391DE52816778E00FA9CDC /* Network */,
 				C3391E1428177F2C00FA9CDC /* Extension */,
 			);
-			path = "DFINERY-SDK";
+			path = DfineryAnalytics;
 			sourceTree = "<group>";
 		};
 		C37CE7452810E2EE0025B233 /* DFINERY-SDKTests */ = {
@@ -196,9 +196,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		C37CE7382810E2EE0025B233 /* DFINERY-SDK */ = {
+		C37CE7382810E2EE0025B233 /* DfineryAnalytics */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C37CE74B2810E2EE0025B233 /* Build configuration list for PBXNativeTarget "DFINERY-SDK" */;
+			buildConfigurationList = C37CE74B2810E2EE0025B233 /* Build configuration list for PBXNativeTarget "DfineryAnalytics" */;
 			buildPhases = (
 				C37CE7342810E2EE0025B233 /* Headers */,
 				C37CE7352810E2EE0025B233 /* Sources */,
@@ -209,14 +209,14 @@
 			);
 			dependencies = (
 			);
-			name = "DFINERY-SDK";
+			name = DfineryAnalytics;
 			productName = "DFINERY-SDK";
-			productReference = C37CE7392810E2EE0025B233 /* DFINERY_SDK.framework */;
+			productReference = C37CE7392810E2EE0025B233 /* DfineryAnalytics.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		C37CE7402810E2EE0025B233 /* DFINERY-SDKTests */ = {
+		C37CE7402810E2EE0025B233 /* DfineryAnalyticsTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C37CE74E2810E2EE0025B233 /* Build configuration list for PBXNativeTarget "DFINERY-SDKTests" */;
+			buildConfigurationList = C37CE74E2810E2EE0025B233 /* Build configuration list for PBXNativeTarget "DfineryAnalyticsTests" */;
 			buildPhases = (
 				C37CE73D2810E2EE0025B233 /* Sources */,
 				C37CE73E2810E2EE0025B233 /* Frameworks */,
@@ -227,9 +227,9 @@
 			dependencies = (
 				C37CE7442810E2EE0025B233 /* PBXTargetDependency */,
 			);
-			name = "DFINERY-SDKTests";
+			name = DfineryAnalyticsTests;
 			productName = "DFINERY-SDKTests";
-			productReference = C37CE7412810E2EE0025B233 /* DFINERY-SDKTests.xctest */;
+			productReference = C37CE7412810E2EE0025B233 /* DfineryAnalyticsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -251,7 +251,7 @@
 					};
 				};
 			};
-			buildConfigurationList = C37CE7332810E2EE0025B233 /* Build configuration list for PBXProject "DFINERY-SDK" */;
+			buildConfigurationList = C37CE7332810E2EE0025B233 /* Build configuration list for PBXProject "DfineryAnalytics" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -264,8 +264,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C37CE7382810E2EE0025B233 /* DFINERY-SDK */,
-				C37CE7402810E2EE0025B233 /* DFINERY-SDKTests */,
+				C37CE7382810E2EE0025B233 /* DfineryAnalytics */,
+				C37CE7402810E2EE0025B233 /* DfineryAnalyticsTests */,
 			);
 		};
 /* End PBXProject section */
@@ -328,7 +328,7 @@
 /* Begin PBXTargetDependency section */
 		C37CE7442810E2EE0025B233 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = C37CE7382810E2EE0025B233 /* DFINERY-SDK */;
+			target = C37CE7382810E2EE0025B233 /* DfineryAnalytics */;
 			targetProxy = C37CE7432810E2EE0025B233 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -476,7 +476,7 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "young.DFINERY-SDK";
+				PRODUCT_BUNDLE_IDENTIFIER = young.DfineryAnalytics;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -506,7 +506,7 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "young.DFINERY-SDK";
+				PRODUCT_BUNDLE_IDENTIFIER = young.DfineryAnalytics;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -562,7 +562,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C37CE7332810E2EE0025B233 /* Build configuration list for PBXProject "DFINERY-SDK" */ = {
+		C37CE7332810E2EE0025B233 /* Build configuration list for PBXProject "DfineryAnalytics" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C37CE7492810E2EE0025B233 /* Debug */,
@@ -571,7 +571,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C37CE74B2810E2EE0025B233 /* Build configuration list for PBXNativeTarget "DFINERY-SDK" */ = {
+		C37CE74B2810E2EE0025B233 /* Build configuration list for PBXNativeTarget "DfineryAnalytics" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C37CE74C2810E2EE0025B233 /* Debug */,
@@ -580,7 +580,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C37CE74E2810E2EE0025B233 /* Build configuration list for PBXNativeTarget "DFINERY-SDKTests" */ = {
+		C37CE74E2810E2EE0025B233 /* Build configuration list for PBXNativeTarget "DfineryAnalyticsTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C37CE74F2810E2EE0025B233 /* Debug */,

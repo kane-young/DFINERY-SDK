@@ -8,7 +8,7 @@
 import CoreTelephony
 import Network
 import XCTest
-@testable import DFINERY_SDK
+@testable import DfineryAnalytics
 
 final class RequestBuilderTests: XCTestCase {
   private var sut: RequestBuilder!
