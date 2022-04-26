@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct EventAdditionResponse: Decodable {
+public struct EventAdditionResponse: Decodable {
   let result: Bool
   let message: String
 }
