@@ -6,7 +6,7 @@
 //
 
 import XCTest
-@testable import DFINERY_SDK
+@testable import DfineryAnalytics
 
 final class HTTPClientTests: XCTestCase {
 
