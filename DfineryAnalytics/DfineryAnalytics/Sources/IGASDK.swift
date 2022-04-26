@@ -35,9 +35,9 @@ public final class IGASDK {
     self.userProperties = keyValues
   }
 
-  public func addEvent(appKey: String, eventName: String, eventProperties: [String: Any]? = nil) {
+  public func addEvent(eventName: String, eventProperties: [String: Any]? = nil) {
     self.eventLogger.logEvent(
-      appKey: appKey,
+      appKey: self.appKey,
       eventName: eventName,
       eventProperties: eventProperties,
       userProperties: self.userProperties,
