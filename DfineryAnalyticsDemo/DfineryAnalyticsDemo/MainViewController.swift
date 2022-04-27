@@ -11,7 +11,7 @@ import UIKit
 
 import DfineryAnalytics
 
-final class ViewController: UIViewController {
+final class MainViewController: UIViewController {
 
   // MARK: Properties
 

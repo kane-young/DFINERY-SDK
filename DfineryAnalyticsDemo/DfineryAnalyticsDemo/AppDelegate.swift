@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
     // Override point for customization after application launch.
 
-    self.igaSDK.initIGASDK(appKey: "ss@naver.com")
+    self.igaSDK.initIGASDK(appKey: "lyw2100@naver.com")
     self.igaSDK.setUserProperties(with: [
       "gender": "male",
       "age": 28,
