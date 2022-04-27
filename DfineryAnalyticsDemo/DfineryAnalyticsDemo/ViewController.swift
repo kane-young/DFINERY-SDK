@@ -13,7 +13,12 @@ import DfineryAnalytics
 
 final class ViewController: UIViewController {
 
+  // MARK: Properties
+
   private let igaSDK = IGASDK.getInstance
+
+
+  // MARK: Override Function
 
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -42,5 +47,32 @@ final class ViewController: UIViewController {
         self.igaSDK.stopGettingIDFA()
       }
     }
+  }
+
+
+  // MARK: Action Method
+
+  @IBAction func touchBlueButton(_ sender: UIButton) {
+    self.igaSDK.addEvent(eventName: "Touch Button", eventProperties: [
+      "Color": "Blue"
+    ])
+  }
+
+  @IBAction func touchRedButton(_ sender: UIButton) {
+    self.igaSDK.addEvent(eventName: "Touch Button", eventProperties: [
+      "Color": "Red"
+    ])
+  }
+
+  @IBAction func touchGreenButton(_ sender: UIButton) {
+    self.igaSDK.addEvent(eventName: "Touch Button", eventProperties: [
+      "Color": "Green"
+    ])
+  }
+
+  @IBAction func touchYellowButton(_ sender: UIButton) {
+    self.igaSDK.addEvent(eventName: "Touch Button", eventProperties: [
+      "Color": "Yellow"
+    ])
   }
 }
