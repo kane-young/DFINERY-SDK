@@ -1,0 +1,4 @@
+framework module DfineryAnalytics {
+  header "DfineryAnalytics-Swift.h"
+  requires objc
+}
